@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    /* box-shadow: 0 0 0 3px red inset; */
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.image-header-desktop {
+    display: none;
+}
+
+.image-header-mobile {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+}
+
+.title-desktop {
+    display: none;
+}
+
+.title-mobile {
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -45%);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.red {
+    position: absolute;
+    top: -50%;
+    transform: translate(0, -50%);
+
+    border-radius: 10px;
+    background-color: #AB0433;
+}
+
+.red > div > p {
+    font-size: .8rem;
+}
+
+.bn-guitar-mobile {
+    width: 100%;
+    height: 208px;
+}
+
+.bn-guitar-desktop {
+    display: none;
+}
+
+.orange {
+    padding: 8px 20px;
+    background-color: #FF753A;
+    border: none;
+    border-radius: 30px;
+}
+
+hr {
+    width: 100px;
+    margin: 0 auto;
+    border: 2px solid rgb(171, 4, 51);
+    border-radius: 4px;
+}
+
+.new-products h2 {
+    color: #505050;
+    font-size: 2rem;
+}
+
+.popular-finds {
+    background-color: #ECECEC;
+}
+
+.card {
+    width: 100%;
+    height: 252px;
+
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(90deg, rgba(251,251,251,1) 0%, rgba(211,211,211,1) 100%);
+}
+
+.guitars {
+    width: 100%;
+    height: 100%;
+    top: -20px;
+}
+
+.description {
+    padding: 1em;
+}
+
+.colors {
+    width: 160px;
+    border: 2px solid #EAEAEA;
+    border-radius: 30px;
+}
+
+.finds {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #505050;
+}
+
+.desktop-footer {
+    display: none;
+}
+
+.logo-footer {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.icon-footer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.white {
+    width: 100px;
+    margin: 0 auto;
+    border: 2px solid rgb(247, 247, 247);
+    border-radius: 4px;
+}
+
+.footer-cr {
+    text-align: center;
+}
+
+@media all and (min-width: 60em) {
+    .image-header-desktop {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-header-mobile {
+        display: none;
+    }
+
+    .title-mobile {
+        display: none;
+    }
+
+    .title-desktop {
+        display: block;
+        width: 450px;
+        position: absolute;
+        top: 45%;
+        transform: translate(0, -45%);
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .bn-guitar-mobile {
+        display: none;
+    }
+
+    .bn-guitar-desktop {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .red {
+        position: absolute;
+        top: -50%;
+        transform: translate(0, -50%);
+    
+        border-radius: 10px;
+        background-color: #AB0433;
+    }
+
+    .red > div > p {
+        width: 570px;
+        font-size: 1.5rem;
+    }
+
+    .new-products > div > div {
+        width: 400px;
+        margin: 0 1em;
+    }
+
+    .popular-finds > div > div {
+        width: 400px;
+        margin: 0 1em;
+    }
+
+    .logo-footer {
+        display: block;
+    }
+
+    .footer-p {
+        margin: 0 2em;
+    }
+
+    .footer-description {
+        padding: 4em 3em;
+    }
+
+    .icon-footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer-text {
+        margin-right: 3em;
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    .desktop-footer {
+        display: block;
+    }
+
+    .footer-text-desktop {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .white {
+        width: 100px;
+        margin: 0;
+        border: 2px solid rgb(247, 247, 247);
+        border-radius: 4px;
+    }
+
+    .footer-cr {
+        padding-left: 8em;
+        text-align: left;
+    }
+}
